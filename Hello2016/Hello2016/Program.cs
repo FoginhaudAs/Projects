@@ -12,7 +12,13 @@ namespace Hello2016
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Hello 2016 小伙伴们大家好！");
+            Console.WriteLine("Hello 2016 小伙伴们大家好！" + args.Length);
+            foreach (string xx in args)
+            {
+                Console.WriteLine("Test {0}", xx);
+            }
+            MyHello myhl = new MyHello();
+            myhl.MyHelloX();
             Console.ResetColor();
         }
     }
