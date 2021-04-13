@@ -12,7 +12,7 @@ namespace Hello2016
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Hello 2016 小伙伴们大家好！");
+            Console.WriteLine("{0 :F}", System.DateTime.Now);//输出时间
             foreach (string xx in args)
             {
                 Console.WriteLine("Test {0}", xx);
